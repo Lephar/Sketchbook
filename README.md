@@ -1,2 +1,2 @@
 # Game
-Playground to get experience on pathfinding algorithms, camera rotation and collisions for a game
+My personal playground to get experience on pathfinding, camera rotation and collision algorithms
