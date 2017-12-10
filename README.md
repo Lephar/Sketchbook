@@ -1,2 +1,2 @@
 # Game Algorithms
-My personal playground to get experience on pathfinding, camera rotation and collision algorithms
+My personal playground on graphics and AI
