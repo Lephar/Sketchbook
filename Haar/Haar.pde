@@ -30,8 +30,8 @@ void draw()
   //haar=haar(mirror(edge(blur(camera))));
   //image(lhaar(mirror(edge(blur(camera)))),camera.width/2,height/2);
   //image(lhaar(mirror(camera)),camera.width+camera.width/2,height/2);
-  image(mirror(camera),camera.width/2,height/2);
-  image(edgep(blur(camera)),camera.width+camera.width/2,height/2);
+  image(blur(camera),camera.width/2,height/2);
+  image(equate(blur(camera)),camera.width+camera.width/2,height/2);
   surface.setTitle(""+frameRate);
 }
 
