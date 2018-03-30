@@ -6,7 +6,7 @@ class Sun extends Planet
   Sun(float rad, float red, float grn, float blu, int glow, float lrd, float lgr, float lbl)
   {
     super(rad, new PVector(0,0,0), new PVector(0,0,0), new PVector(0,0,0), color(red, grn, blu));
-    blur = loadShader("BlurP.glsl");
+    blur = loadShader("blur.glsl");
     blur.set("blurSize",glow);
     blur.set("sigma",glow/2.0);
     lclr = color(lrd, lgr, lbl);
