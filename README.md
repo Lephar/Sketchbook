@@ -1,2 +1,2 @@
-# Game Algorithms
-My personal playground on graphics, image processing and artificial intelligence.
+# Processing Sketches
+Image processing and other hobby projects

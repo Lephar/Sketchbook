@@ -6,7 +6,7 @@ int x1,y1,x2,y2;
 
 void settings()
 {
-  size(1280,480,P3D);
+  size(1280,960,P3D);
   noSmooth();
 }
 
@@ -17,10 +17,10 @@ void setup()
   noFill();
   
   rectMode(CENTER);
-  imageMode(CENTER);
+  //imageMode(CENTER);
   textAlign(CENTER,CENTER);
   
-  (camera=new Capture(this,width/2,height,30)).start();
+  (camera=new Capture(this,width/2,height/2,30)).start();
 }
 
 void draw()
@@ -28,10 +28,10 @@ void draw()
   background(255);
   if(camera.available()) camera.read();
   //haar=haar(mirror(edge(blur(camera))));
-  //image(lhaar(mirror(edge(blur(camera)))),camera.width/2,height/2);
-  //image(lhaar(mirror(camera)),camera.width+camera.width/2,height/2);
-  image(blur(camera),camera.width/2,height/2);
-  image(equate(blur(camera)),camera.width+camera.width/2,height/2);
+  image(lhaar(camera),0,0);
+  image(blur(camera),camera.width,0);
+  image(edge(blur(camera)),0,camera.height);
+  image(threshold(camera),camera.width,camera.height);
   surface.setTitle(""+frameRate);
 }
 
@@ -50,5 +50,5 @@ void mouseReleased()
 {
   x2=mouseX;
   y2=mouseY;
-  println(light(haar,x1,y1,x2-x1,y2-y1));
+  //println(light(haar,x1,y1,x2-x1,y2-y1));
 }
