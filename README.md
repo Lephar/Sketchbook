@@ -1,2 +1,2 @@
 # Processing Sketches
-Image processing and other hobby projects
+Image processing and computer graphics projects
